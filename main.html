@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Fast | Acesso Seguro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-panel">
+            <div class="brand-content">
+                <h1>Banco Fast</h1>
+                <p>Onde sua segurança encontra o futuro.</p>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="login-header">
+                <h2>Bem-vindo de volta</h2>
+                <p>Insira suas credenciais para acessar sua conta.</p>
+            </div>
+
+            <form id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="account">Número da Conta</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="account" class="form-control" placeholder="00000-0" autocomplete="username">
+                        <span class="icon-input">👤</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha de Acesso</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" class="form-control" placeholder="••••••••" autocomplete="current-password">
+                        <span class="icon-input" id="togglePassword" title="Mostrar senha">👁️</span>
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="rememberMe"> Lembrar-me
+                    </label>
+                    <a href="#" class="forgot-pass" onclick="alert('Simulação: Link para recuperação de senha enviado!')">Esqueci minha senha</a>
+                </div>
+
+                <button type="submit" class="btn-login" id="submitBtn">
+                    <div class="loader" id="btnLoader"></div>
+                    <span id="btnText">Acessar Conta</span>
+                </button>
+
+                <div id="feedbackArea" class="feedback-msg"></div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
